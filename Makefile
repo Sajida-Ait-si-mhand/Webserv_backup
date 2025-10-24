@@ -1,8 +1,8 @@
 NAME = ParcingRequest
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++11 -fsanitize=address -g3
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -g3
 
-SRCS = http_parser.cpp
+SRCS = src/Server/socket.cpp src/Request/ft_parse_request.cpp  src/Request/http_parser.cpp src/Methods/post_handler.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 PINK = \033[35m
